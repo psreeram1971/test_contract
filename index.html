@@ -48,9 +48,13 @@
                        
         var CoursetroContract = web3.eth.contract([{"constant": false,"inputs": [{"name": "_fName","type": "string"},{"name": "_age","type": "uint256"}],"name": "setInstructor","outputs": [],"payable": false,"stateMutability": "nonpayable","type": "function"},{"constant": true,"inputs": [],"name": "getInstructor","outputs": [{"name": "","type": "string"},{"name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"}]);
         
-        console.log("CoursetroContract : "+CoursetroContract);
+                
+         console.log("CoursetroContract : "+CoursetroContract);
         //var Coursetro = CoursetroContract.at('0x391fd2bec83642f8d2d56c260bd5240f56c8196a');
-        var Coursetro = CoursetroContract.at('0x3e183574c74a649788ba15f05807c0b1f6b2485e');
+        var Coursetro = CoursetroContract.at('0x0a811f08ab6656bd592f0df69e3c995e28a6ee69');
+        
+        
+        
         console.log(Coursetro);
         
         Coursetro.getInstructor(function(error, result){
